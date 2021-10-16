@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Bandcamp Shuffle",
+  "version": "1.0",
+  "description": "Shuffles the albums in your Bandcamp collection.",
+  "icons": {
+    "48": "icons/shuffle-48.png",
+    "96": "icons/shuffle-96.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "page_action": {
+    "default_icon": "icons/shuffle-128.png",
+    "browser_style": false,
+    "show_matches": ["https://*.bandcamp.com/*"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true,
+    "chrome_style": true
+  },
+  "background": {
+    "scripts": [
+      "index.js"
+    ]
+  }
+}
